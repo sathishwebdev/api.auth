@@ -36,7 +36,7 @@ const UserSchema = new mongoose.Schema({
   },
   dob:{
     type: String,
-    default: new Date().toLocaleDateString('en-IN').split("/").join("-")
+    default: null
   },
   profilePic:{
     type: String,
