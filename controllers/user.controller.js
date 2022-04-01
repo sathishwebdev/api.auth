@@ -113,7 +113,7 @@ exports.getUserDetail = async (req, res) => {
     if (!user) res.status(400).send({ result:false,message: "Error to get User List" });
     res.send({result: true, data: user.details() });
   } catch (error) {
-    res.status(400).send({ message: error , error: true});
+    res.status(400).send({error , error: true});
   }
 };
 
